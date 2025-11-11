@@ -163,6 +163,7 @@ cd ../../
 This will place the checkpoints in the `src/sam2/checkpoints/` directory.
 
 💡 We use [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt) as our tool.
+
 ---
 
 ## 📊 Data Preparation
