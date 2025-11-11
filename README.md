@@ -201,8 +201,11 @@ This step uses SAM2 to detect objects in the dataset images and creates a pre-pr
 ```bash
 cd sam2
 ```
-Next, **modify `config.yaml`** inside the `sam2` directory to set the correct paths for your dataset and output locations. After configuring, run the script:
+Next, **modify the `config.yaml` file** located in the `src/config/` directory. You will need to set the `sam2_checkpoint` path and the correct path for your dataset.
 
+💡 **We recommend using absolute paths directly for these settings.**
+
+After configuring, run the script:
 ```bash
 python preprocess_pool.py
 ```
