@@ -43,4 +43,4 @@ for idx, row in tqdm(merge_df.iterrows(), desc="processing image", total=len(mer
 
 merge_df["image"] = merge_df["image"].apply(lambda x: None if pd.isna(x) or x is None else " ")
 
-merge_df.to_json("test.jsonl", orient="records", lines=True, force_ascii=False)
+merge_df.to_json("m3cot/test.jsonl", orient="records", lines=True, force_ascii=False)
