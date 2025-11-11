@@ -57,7 +57,7 @@ if __name__ == '__main__':
     for DATA_NAME in ['m3cot']:
         config_path = "../config/config.yaml"
         model_name = 'qwen' # the model you want to use
-        output_path = "data_all/"
+        output_path = "../data_all/"
         image_pool = {}
 
         with open(config_path, 'r', encoding='utf-8') as f:
