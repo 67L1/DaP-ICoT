@@ -1,5 +1,5 @@
 # DaP-ICoT: Let's Think with Images Efficiently!
-### Official PyTorch Implementation for "An Interleaved-Modal Chain-of-Thought Reasoning Framework with Dynamic and Precise Visual Thoughts"
+### Official PyTorch Implementation for "Let's Think with Images Efficiently! An Interleaved-Modal Chain-of-Thought Reasoning Framework with Dynamic and Precise Visual Thoughts"
 
 ---
 
@@ -33,7 +33,6 @@ Our experiments across multiple benchmarks and models demonstrate that DaP-ICoT 
 - [Installation and Setup](#-installation-and-setup)
 - [Data Preparation](#-data-preparation)
 - [Running the Code](#️-running-the-code)
-- [Citation](#-citation)
 - [Project Structure](#-project-structure)
 
 ---
@@ -87,7 +86,7 @@ pip install -r requirements.txt
 > ```
 >
 > For other CUDA versions or CPU-only installations, please visit the official PyTorch website to find the correct command for your system. This will ensure full compatibility.
-> - **Link:** [PyTorch Previous Versions Page]
+> - **Link:** [PyTorch Previous Versions Page](https://pytorch.org/get-started/previous-versions/)
 
 ### 4. Patch the `transformers` Library
 
@@ -138,16 +137,16 @@ input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
 
 ### 5. Setup SAM2
 
-We use [Segment Anything Model 2 (SAM2)] for object detection.
+We use [Segment Anything Model 2 (SAM2)](https://github.com/facebookresearch/sam2) for object detection.
 
 > 💡 **Note on SAM2 Dependencies**
 >
-> SAM2 has its own set of dependencies. Although our `requirements.txt` covers all of them, if you encounter any installation or dependency errors specifically when running SAM2 scripts, please refer to the official [SAM2 GitHub repository] for detailed installation instructions and troubleshooting.
+> SAM2 has its own set of dependencies. Although our `requirements.txt` covers all of them, if you encounter any installation or dependency errors specifically when running SAM2 scripts, please refer to the official [SAM2 GitHub repository](https://github.com/facebookresearch/sam2) for detailed installation instructions and troubleshooting.
 
 **a. Clone the SAM2 repository:**
 
 ```bash
-git clone sam2 repository URL
+git clone https://github.com/facebookresearch/sam2.git
 ```
 
 **b. Download SAM2 checkpoints:**
@@ -169,7 +168,7 @@ This will place the checkpoints in the `dap_icot/sam2/checkpoints/` directory.
 ### 1. Download the M3CoT Dataset
 
 Download the test set for the M3CoT dataset from Hugging Face:
-- **Dataset Link:** [M3CoT]
+- **Dataset Link:** [M3CoT](https://huggingface.co/datasets/LightChen2333/M3CoT)
 
 Place the downloaded files into a directory of your choice. You will need to specify this path later in the config file.
 
