@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
         detect_model = sam2Model(config_path)
 
-        output_path = output_path + DATA_NAME + '/' + DATA_NAME + "_sam2_image_pool_qwen.pkl"
+        output_path = output_path + DATA_NAME + '/' + "image_pool_qwen.pkl"
 
         dataset = open(config['dataset'][DATA_NAME]['EVAL_FILE']).readlines()
         dataset = [json.loads(d) for d in dataset]
