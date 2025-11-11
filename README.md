@@ -49,6 +49,8 @@ Our experiments across multiple benchmarks and models demonstrate that DaP-ICoT 
 
 Follow these steps carefully to set up the project environment and all necessary components.
 
+‼️ Note: All the following operations are performed in the src directory.
+
 ### 1. Clone the Repository
 
 First, clone this repository to your local machine.
@@ -177,6 +179,7 @@ Place the downloaded files into a directory of your choice. You will need to spe
 Run the `pq_jsonl.py` script to filter out entries with empty images and convert all images to the `.png` format. This script will generate a `test.jsonl` file.
 
 ```bash
+cd data_all
 python pq_jsonl.py
 ```
 By default, the output `test.jsonl` and processed images will be stored in the `data_all/m3cot/` directory.
@@ -187,7 +190,7 @@ By default, the output `test.jsonl` and processed images will be stored in the `
 Our custom scripts for SAM2 pre-processing must be located inside the `sam2` folder.
 
 ```bash
-# Ensure you are in the root directory 'dap_icot'
+# Ensure you are in the root directory 'DaP_ICoT/src'
 mv preprocess_pool.py process_res.py sam2_detect.py sam2/
 ```
 
@@ -210,7 +213,7 @@ The resulting image pool will be stored in `data_all/m3cot/` (or your configured
 
 Now you are ready to run the main experiment.
 
-1.  **Navigate back to the project root directory:**
+1.  **Navigate back to the project root directory `DaP-ICoT/src`:**
 
     ```bash
     cd ../  # If you are still in the sam2 directory
