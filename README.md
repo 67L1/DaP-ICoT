@@ -54,7 +54,7 @@ Follow these steps carefully to set up the project environment and all necessary
 First, clone this repository to your local machine.
 
 ```bash 
-git clone our repository URL
+git clone https://github.com/67L1/DaP-ICoT.git
 cd dap_icot
 ```
 
