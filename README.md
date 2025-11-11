@@ -155,14 +155,14 @@ git clone https://github.com/facebookresearch/sam2.git
 Navigate into the `sam2` directory and run the official script to download the model weights.
 
 ```bash
-cd sam2
-mkdir -p checkpoints && cd checkpoints
+cd sam2/checkpoints
 # On some systems you might need to make the script executable first: chmod +x download_ckpts.sh
 ./download_ckpts.sh
 cd ../../
 ```
-This will place the checkpoints in the `dap_icot/sam2/checkpoints/` directory.
+This will place the checkpoints in the `src/sam2/checkpoints/` directory.
 
+💡 We use [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt) as our tool.
 ---
 
 ## 📊 Data Preparation
