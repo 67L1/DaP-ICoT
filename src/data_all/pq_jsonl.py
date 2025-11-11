@@ -17,7 +17,7 @@ merge_df["choices"] = merge_df["choices"].apply(
     lambda x: [str(i) for i in x] if isinstance(x, (list, np.ndarray)) else x
 )
 
-image_dir = "data_all/m3cot/images"
+image_dir = "m3cot/images"
 os.makedirs(image_dir, exist_ok=True)
 
 for idx, row in tqdm(merge_df.iterrows(), desc="processing image", total=len(merge_df)):
