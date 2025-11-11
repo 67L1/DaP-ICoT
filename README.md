@@ -242,10 +242,8 @@ dap_icot/src/
 ├── data_all/
 │   ├── pq_jsonl.py              # Dataset filtering script
 │   └── m3cot/                   # Processed data and image pools
-│       └── test.jsonl
-├── image_pools/                 # Image pools
-│   └── m3cot/                   
-│       └── image_pool_qwen.pkl
+│       └── test.jsonl            
+│       └── image_pool_qwen.pkl  # Image pool for Qwen
 ├── config/                      # Main configuration file for run.py
 │   └── config.yaml              
 ├── requirements.txt             # Python dependencies
