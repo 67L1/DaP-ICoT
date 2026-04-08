@@ -1,6 +1,7 @@
 # DaP-ICoT: Let's Think with Images Efficiently!
 ### Official PyTorch Implementation for "Let's Think with Images Efficiently! An Interleaved-Modal Chain-of-Thought Reasoning Framework with Dynamic and Precise Visual Thoughts"
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/67L1/DaP-ICoT)
+[![](https://img.shields.io/badge/cs.CV-arXiv%3A2603.21754-B31B1B)](https://arxiv.org/abs/2404.17176)
 ---
 
 ## 📖 Introduction
